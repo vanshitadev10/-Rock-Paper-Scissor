@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS Pages/rps.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Rock-Paper-Scissor</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Rock-Paper-Scissors</h1>
+            <h2 class="score">Top Score: <span class="num">0</span></h2>
+            <a href="rule.html" target="_blank">Read Rules</a>
+        </div>
+
+
+        <div class="rps">
+            <img src="Images/rps.png" alt="Rock-Paper-Scissors" class="rps_img">
+            <form class="rps_form">
+                <lable class="ques">How Many Matches Would You Like To Have?</lable>
+                <input type="number" class="text" value="15" min="1">
+            </form>
+            <button class="start">Start</button>
+        </div>
+
+
+        <div class="game">
+            <div class="images">
+                <div class="computer">
+                    <h2>Computer's Score: <span class="comp">0</span></h2>
+                    <img src="Images/paper.jpg" class="game_img1">
+                </div>
+
+                <div class="result">
+                    <h1>Let's Start</h1>
+                    <h2>Choose any one of the below images</h2>
+                </div>
+
+                <div class="player">
+                    <h2>Your Score: <span class="user">0</span></h2>
+                    <img src="Images/paper.jpg" class="game_img2">
+                </div>
+            </div>
+
+
+            <div class="options">
+                <button class="btn"><img src="Images/paper.jpg" alt="paper" class="img"></button>
+                <button class="btn"><img src="Images/rock.jpg" alt="rock" class="img"></button>
+                <button class="btn"><img src="Images/scissor.jpg" alt="scissor" class="img"></button>
+            </div>
+        </div>
+
+        <div class="overall">
+            <h1 class="over">You WON the game</h1>
+            <img src="Images/smile.png" class="over_img">
+            <button class="over_start">Start Again</button>
+        </div>
+    </div>
+
+    <footer>Created by Vanshita Dev | &copy;2021 All Rights Reserved</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

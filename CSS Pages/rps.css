@@ -1,0 +1,652 @@
+*{
+    top: 0px;
+    left: 0px;
+}
+
+body{
+    background-color: #023b3a;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* Heading */
+
+.container .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .heading h1{
+    font-size: 4rem;
+    color: rgb(250, 246, 229);
+    display: inline-block;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.container .score{
+    margin-top: 4px;
+    color: rgb(250, 246, 229);
+}
+
+.container a{
+    color: rgb(253, 221, 76);
+    margin-top: -0.5%;
+}
+
+.container a:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Form */
+
+.rps{
+    display: inline-block;
+    width: 46%;
+    height: 60%;
+    margin-left: 23.5%;
+    margin-right: 23.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    background-color: #001d1d;
+    padding: 3%;
+    border-radius: 10px;
+    margin-bottom: 7vh;
+    text-align: center;
+}
+
+.rps .rps_img{
+    width: 37%;
+    background-color: rgb(250, 246, 229);
+}
+
+.rps .rps_form{
+    display: flex;
+    flex-direction: column;
+    background-color: #001d1d;
+}
+
+.rps .ques{
+    color: rgb(250, 246, 229);
+    font-size: 2rem;
+    margin-top: 30px;
+    background-color: #001d1d;
+}
+
+.rps .text{
+    padding: 4px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: #2f3131;
+    color: rgb(250, 246, 229);
+    margin-top: 10px;
+}
+
+
+.rps .start{
+    font-family: 'Exo 2', sans-serif;
+    width: fit-content;
+    margin-top: 20px;
+    color: black;
+    background-color: rgb(250, 246, 229);
+    border: 2px solid black;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.rps .start:hover{
+    cursor: pointer;
+    border: 2px solid rgb(250, 246, 229);
+}
+
+
+
+
+/* Game */
+
+.game{
+    display: none;
+}
+
+.game .images{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 0.7fr 1fr;
+    justify-items: space-between;
+    margin-top: -1.8%;
+}
+
+.game .images .computer{
+    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.game .images .computer h2{
+    color: rgb(250, 246, 229);
+}
+
+.game .images .computer .game_img1{
+    width: 83%;
+    height: 90%;
+    visibility: hidden;
+}
+
+
+
+.game .result{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(253, 221, 76);
+    margin-top: 22%;
+    height: 30%;
+    animation: roll-down 1.5s ease-in-out;
+}
+
+@keyframes roll-down{
+    from{
+        transform: translateY(-60%);
+    }
+
+    to{
+        transform: translateY(0%);
+    }
+}
+
+.game .result h1{
+    font-size: 3rem;
+    width: fit-content;
+    text-align: center;
+}
+
+.game .result h2{
+    width: fit-content;
+    text-align: center;
+    margin-top: -1%;
+}
+
+
+
+.game .images .player{
+    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.game .images .player h2{
+    color: rgb(250, 246, 229);
+}
+
+.game .images .player .game_img2{
+    width: 83%;
+    height: 90%;
+    visibility: hidden;
+}
+
+
+
+.game .options{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: flex-end;
+}
+
+.game .options .btn{
+    width: 44%;
+    height: 100%;
+    bottom: 0px;
+    background-color: #002626;
+    border: none;
+}
+
+.game .options .btn:hover{
+    cursor: pointer;
+}
+
+.game .options .img{
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+}
+
+
+
+/* Game Result */
+
+.container .overall{
+    width: 30%;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: 5%;
+    color: rgb(253, 221, 76);
+    text-align: center;
+    background-color: #001d1d;
+    font-size: 1.5rem;
+    padding: 2%;
+    animation: roll-down 1.5s ease-in-out;
+}
+
+.container .overall .over{
+    margin-top: 3%;
+}
+
+.container .overall .over_img{
+    width: 20%;
+}
+
+.container .overall .over_start{
+    font-family: 'Exo 2', sans-serif;
+    margin-top: 20px;
+    color: black;
+    background-color: rgb(250, 246, 229);
+    border: 2px solid black;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.container .overall .over_start:hover{
+    cursor: pointer;
+    border: 2px solid rgb(250, 246, 229);
+}
+
+
+/* Footer */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 1px 2px;
+    font-size: 1rem;
+    text-align: center;
+    position: fixed;
+    top: 97.1vh;
+    width: 100%;
+}
+
+
+/* Making The Website Responsive */
+
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+
+    .rps .rps_img{
+        width: 45%;
+    }
+
+    .rps .ques{
+        font-size: 1.6rem;
+    }
+
+    .rps .start{
+        font-size: 1.2rem;
+    }
+
+
+
+    .game .options {
+        margin-top: 8%;
+    }
+
+    .game .result h1{
+        font-size: 2.5rem;
+    }
+    
+    .game .result h2{
+        font-size: 1.2rem;
+    }
+
+    .game .images .computer h2{
+        font-size: 1.2rem;
+    }
+    
+    .game .images .player h2{
+        font-size: 1.2rem;
+    }
+
+
+
+    .container .overall{
+        width: 40%;
+        margin-left: 28%;
+        margin-right: 28%;
+        margin-top: 6%;
+        font-size: 1.2rem;
+    }
+
+    .container .over{
+        margin-top: 10px;
+    }
+    
+    .container .overall .over_start{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media only screen and (min-width: 700px) and (max-width: 900px){
+
+    .container .heading h1{
+        font-size: 3.5rem;
+    }
+
+    .container h2{
+        font-size: 1.5rem;
+    }
+
+    .rps{
+        margin-left: 17%;
+        margin-right: 17%;
+        width: 60%;
+        margin-top: 6%;
+    }
+
+    .rps .rps_img{
+        width: 50%;
+    }
+
+    .rps .ques{
+        font-size: 1.5rem;
+    }
+
+    .rps .start{
+        font-size: 1.2rem;
+    }
+
+
+
+
+    .game .images{
+        margin-top: 6%;
+    }
+
+    .game .result{
+        margin-top: 30%;
+    }
+
+    .game .options {
+        margin-top: 15%;
+    }
+
+    .game .result h1{
+        font-size: 2.3rem;
+    }
+    
+    .game .result h2{
+        font-size: 1.1rem;
+    }
+
+    .game .images .computer h2{
+        font-size: 1.2rem;
+    }
+    
+    .game .images .player h2{
+        font-size: 1.2rem;
+    }
+
+    .game .options .btn{
+        width: 60%;
+    }
+
+
+
+    .container .overall{
+        width: 44%;
+        margin-left: 24%;
+        margin-right: 24%;
+        margin-top: 12%;
+        font-size: 1.1rem;
+        padding: 4%;
+    }
+
+    .container .over{
+        margin-top: 7px;
+    }
+    
+    .container .overall .over_start{
+        font-size: 1.1rem;
+    }
+}
+
+
+@media only screen and (min-width: 450px) and (max-width: 700px){
+
+    .container .heading h1{
+        font-size: 2.8rem;
+    }
+
+    .container h2{
+        font-size: 1.2rem;
+    }
+
+    .rps{
+        margin-left: 17%;
+        margin-right: 17%;
+        width: 60%;
+        margin-top: 8%;
+        padding: 6% 3%;
+    }
+
+    .rps .rps_img{
+        width: 60%;
+    }
+
+    .rps .ques{
+        font-size: 1.2rem;
+    }
+
+    .rps .text{
+        padding: 2px;
+    }
+
+    .rps .start{
+        font-size: 1rem;
+    }
+
+
+
+
+    .game .images{
+        margin-top: 6%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'res res'
+                             'im1 im2';
+    }
+
+    .game .result{
+        margin-top: 5%;
+        grid-area: res;
+    }
+
+    .game .options {
+        margin-top: 10%;
+    }
+
+    .game .result h1{
+        font-size: 2.3rem;
+    }
+    
+    .game .result h2{
+        font-size: 1.1rem;
+    }
+
+    .game .images .computer .game_img1{
+        grid-area: im1;
+    }
+
+    .game .images .computer h2{
+        font-size: 1.2rem;
+    }
+
+    .game .images .player .game_img2{
+        grid-area: im2;
+    }
+    
+    .game .images .player h2{
+        font-size: 1.2rem;
+    }
+
+    .game .options .btn{
+        width: 60%;
+    }
+
+
+
+    .container .overall{
+        width: 60%;
+        margin-left: 16%;
+        margin-right: 16%;
+        margin-top: 12%;
+        font-size: 1.1rem;
+        padding: 4%;
+    }
+
+    .container .over{
+        margin-top: 7px;
+    }
+    
+    .container .overall .over_start{
+        font-size: 1.1rem;
+    }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 450px){
+
+    .container .heading h1{
+        font-size: 1.7rem;
+    }
+
+    .container h2{
+        font-size: 1rem;
+    }
+
+    .container a{
+        font-size: 0.6rem;
+    }
+
+    .rps{
+        margin-left: 7%;
+        margin-right: 7%;
+        width: 80%;
+        margin-top: 17%;
+        padding: 6% 3%;
+    }
+
+    .rps .rps_img{
+        width: 60%;
+    }
+
+    .rps .ques{
+        font-size: 1rem;
+    }
+
+    .rps .text{
+        padding: 1px;
+        font-size: 0.7rem;
+    }
+
+    .rps .start{
+        font-size: 0.9rem;
+    }
+
+
+
+
+    .game .images{
+        margin-top: 6%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'res res'
+                             'im1 im2';
+    }
+
+    .game .result{
+        margin-top: 5%;
+        grid-area: res;
+    }
+
+    .game .options {
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .game .options .img{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .game .result h1{
+        font-size: 1.8rem;
+    }
+    
+    .game .result h2{
+        font-size: 1rem;
+    }
+
+    .game .images .computer .game_img1{
+        grid-area: im1;
+        width: 95%;
+    }
+
+    .game .images .computer h2{
+        font-size: 0.8rem;
+    }
+
+    .game .images .player .game_img2{
+        grid-area: im2;
+        width: 95%;
+    }
+    
+    .game .images .player h2{
+        font-size: 0.8rem;
+    }
+
+    .game .options .btn{
+        width: 40%;
+    }
+
+
+
+    .container .overall{
+        width: 70%;
+        margin-left: 11%;
+        margin-right: 11%;
+        margin-top: 22%;
+        font-size: 0.9rem;
+        padding: 6% 4%;
+    }
+
+    .container .over{
+        margin-top: 5px;
+    }
+    
+    .container .overall .over_start{
+        font-size: 0.8rem;
+    }
+
+    footer{
+        font-size: 0.7rem;
+        top: 98vh;
+    }
+}
