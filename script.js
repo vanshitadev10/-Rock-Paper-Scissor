@@ -37,6 +37,9 @@ over_start.addEventListener('click', () => {
     result.lastElementChild.innerHTML = `Choose any one of the below images`;
     user_res.innerHTML = `0`;
     comp_res.innerHTML = `0`;
+    comp.lastElementChild.style.visibility = "hidden";
+    play.lastElementChild.style.visibility = "hidden";
+    rule.style.display = 'block';
 })
 
 
