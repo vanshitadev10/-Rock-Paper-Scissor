@@ -10,6 +10,13 @@ body{
 
 /* Heading */
 
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .container .heading{
     display: flex;
     flex-direction: column;
@@ -43,11 +50,7 @@ body{
 /* Form */
 
 .rps{
-    display: inline-block;
-    width: 46%;
-    height: 60%;
-    margin-left: 23.5%;
-    margin-right: 23.5%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,9 +121,9 @@ body{
 .game .images{
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 0.7fr 1fr;
+    grid-template-columns: 1fr 0.9fr 1fr;
     justify-items: space-between;
-    margin-top: -1.8%;
+    height: 60vh;
 }
 
 .game .images .computer{
@@ -136,7 +139,7 @@ body{
 }
 
 .game .images .computer .game_img1{
-    width: 83%;
+    width: 30vw;
     height: 90%;
     visibility: hidden;
 }
@@ -192,7 +195,7 @@ body{
 }
 
 .game .images .player .game_img2{
-    width: 83%;
+    width: 30vw;
     height: 90%;
     visibility: hidden;
 }
@@ -205,6 +208,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: flex-end;
+    margin-bottom: 2rem;
 }
 
 .game .options .btn{
@@ -221,6 +225,7 @@ body{
 
 .game .options .img{
     width: 100%;
+    overflow: hidden;
     height: 100%;
     bottom: 0px;
 }
@@ -489,6 +494,7 @@ footer{
 
     .game .images .computer .game_img1{
         grid-area: im1;
+        width: 40vw;
     }
 
     .game .images .computer h2{
@@ -497,6 +503,7 @@ footer{
 
     .game .images .player .game_img2{
         grid-area: im2;
+        width: 40vw;
     }
     
     .game .images .player h2{
